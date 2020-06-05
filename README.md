@@ -2,17 +2,17 @@
 
 Exploratory project to predict fake news based on his text.
 
-The models could be found on this repository as well as its implementation
+The models could be found on this [repository](https://github.com/Victoraq/FakeNewsClassification/tree/master/server/models) as well as its [implementation](https://github.com/Victoraq/FakeNewsClassification/blob/master/FakeNewsClassification.ipynb)
 
 The used dataset is a compiled real-world news, in which the truthful news were collected from Reuters.com and the fake news from multiple sources [[1]](#1)[[2]](#2).
 
 The dataset could be found on: https://www.uvic.ca/engineering/ece/isot/datasets/index.php
 
-## [The Classifier](https://github.com/Victoraq/FakeNewsClassification/blob/master/FakeNewsClassification.ipynb)
+## The Classifier
 
 Multiple models were evaluated to find the best classificator for fake news. During the tests, the following classifiers obtained the best performance: Support Vector Machine, Decision Tree, and the Gradient Boost. Therefore, they were ensembled into a voting classifier to improve their performance which obtained 99.72% of accuracy over the test set.
 
-## [The Server](https://github.com/Victoraq/FakeNewsClassification/tree/master/server)
+## The Server
 
 A basic flask server was implemented to use as a fake news classifier. Where it uses the model to classify news by the provided URL.
 
